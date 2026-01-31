@@ -1,0 +1,493 @@
+{
+    "globalModelOptions": {
+        "unit": "ft",
+        "showSpaceLabels": true,
+        "areaLabelType": "detail",
+        "outerMeasurements": false,
+        "noLabelsAndDimensionsForSpaceTypes": [
+            "Undefined",
+            "Outdoor",
+            "CrawlSpace"
+        ],
+        "noDimensionsForSpaceTypes": [
+            "Terrace",
+            "Balcony",
+            "Deck",
+            "Patio",
+            "Porch",
+            "Yard",
+            "Veranda",
+            "Unfinished",
+            "SwimmingPool",
+            "OpenToBelow"
+        ],
+        "dimensions": {
+            "text": true,
+            "markers": false
+        },
+        "area": true,
+        "areaSpecification": "GIA",
+        "noFloorLabelInSingleFloorCompose": false,
+        "spaceLabelStyle": {
+            "font": "Georama",
+            "color": "#777777",
+            "textCase": "title",
+            "fontStyle": "normal",
+            "fontWeight": 400
+        },
+        "lineMeasurementLabelStyle": {
+            "font": "Georama",
+            "color": "#777777",
+            "textCase": "title",
+            "fontStyle": "normal",
+            "fontWeight": 400
+        },
+        "totalAreaLabelStyle": {
+            "font": "Georama",
+            "color": "#777777",
+            "textCase": "title",
+            "fontStyle": "normal",
+            "fontWeight": 400
+        },
+        "floorLabelStyle": {
+            "font": "Georama",
+            "color": "#777777",
+            "textCase": "title",
+            "fontStyle": "normal",
+            "fontWeight": 400
+        },
+        "swingDoorOpeningAngle": 45,
+        "elementStyles": {
+            "Space": {
+                "style": {
+                    "fill": "#f4ede7",
+                    "fill-opacity": 1,
+                    "stroke": "#f4ede7",
+                    "stroke-opacity": 1,
+                    "stroke-width": 1
+                },
+                "spaceTypeStyle": {
+                    "CrawlSpace": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-dasharray": "5, 5, 1, 5",
+                        "stroke-opacity": 0.5,
+                        "stroke-width": 1
+                    },
+                    "CarPort": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Elevated": {
+                        "fill": "transparent",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-dasharray": "5, 5",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Outdoor": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Court": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Courtyard": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Garden": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Yard": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "FullBath": {
+                        "fill": "#d6e3e4",
+                        "stroke": "#d6e3e4",
+                        "fill-opacity": 1,
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "HalfBath": {
+                        "fill": "#d6e3e4",
+                        "stroke": "#d6e3e4",
+                        "fill-opacity": 1,
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Toilet": {
+                        "fill": "#d6e3e4",
+                        "stroke": "#d6e3e4",
+                        "fill-opacity": 1,
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Laundry": {
+                        "fill": "#d6e3e4",
+                        "stroke": "#d6e3e4",
+                        "fill-opacity": 1,
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Sauna": {
+                        "fill": "#d6e3e4",
+                        "stroke": "#d6e3e4",
+                        "fill-opacity": 1,
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Bedroom": {
+                        "fill": "#eccaaf",
+                        "stroke": "#eccaaf",
+                        "fill-opacity": 1,
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Balcony": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "ScreenedBalcony": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Deck": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "CoveredDeck": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Patio": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "CoveredPatio": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Porch": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "ScreenedPorch": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "RoofTop": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Terrace": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "CoveredTerrace": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "ScreenedTerrace": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "Veranda": {
+                        "fill": "#eeeeee",
+                        "fill-opacity": 1,
+                        "stroke": "#777777",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    },
+                    "SwimmingPool": {
+                        "fill": "#D9EAF7",
+                        "fill-opacity": 1,
+                        "stroke": "#D9EAF7",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    }
+                }
+            },
+            "Column": {
+                "style": {
+                    "fill": "#777777",
+                    "fill-opacity": 1,
+                    "stroke": "#777777",
+                    "stroke-width": 1
+                }
+            },
+            "Railing": {
+                "style": {
+                    "fill": "#eeeeee",
+                    "stroke": "#777777",
+                    "fill-opacity": 0.7,
+                    "stroke-opacity": 1,
+                    "stroke-width": 1.3
+                }
+            },
+            "FixedFurniture": {
+                "style": {
+                    "fill": "#f4ede7",
+                    "fill-opacity": 0.3,
+                    "stroke": "#777777",
+                    "stroke-opacity": 1,
+                    "stroke-width": 1
+                },
+                "typeStyle": {
+                    "WallCabinet": {
+                        "fill": "#f4ede7",
+                        "fill-opacity": 0.3,
+                        "stroke": "#777777",
+                        "stroke-width": 1,
+                        "stroke-opacity": 1
+                    },
+                    "Fan": {
+                        "fill": "transparent",
+                        "fill-opacity": 0.3,
+                        "stroke": "#777777",
+                        "stroke-width": 1,
+                        "stroke-opacity": 1
+                    },
+                    "Misc": {
+                        "fill": "none",
+                        "fill-opacity": 0,
+                        "stroke": "#777777",
+                        "stroke-dasharray": "5, 5",
+                        "stroke-opacity": 1,
+                        "stroke-width": 1
+                    }
+                }
+            },
+            "Stairs": {
+                "style": {
+                    "fill": "transparent",
+                    "fill-opacity": 0,
+                    "stroke": "#777777",
+                    "stroke-opacity": 1
+                }
+            },
+            "Wall": {
+                "style": {
+                    "fill": "#777777",
+                    "fill-opacity": 1,
+                    "stroke": "#777777",
+                    "stroke-linejoin": "round",
+                    "stroke-opacity": 1,
+                    "stroke-width": 1
+                }
+            },
+            "Door": {
+                "style": {
+                    "fill": "#f4ede7",
+                    "stroke": "#777777",
+                    "fill-opacity": 1,
+                    "stroke-opacity": 1,
+                    "stroke-width": 1.2
+                }
+            },
+            "Window": {
+                "style": {
+                    "fill": "#f4ede7",
+                    "stroke": "#777777",
+                    "fill-opacity": 1,
+                    "stroke-opacity": 1,
+                    "stroke-width": 1
+                }
+            },
+            "AdditionalElement": {
+                "style": {
+                    "fill": "#ffffff",
+                    "stroke": "#ffffff",
+                    "fill-opacity": 1,
+                    "stroke-opacity": 1,
+                    "stroke-width": 1.8
+                }
+            }
+        }
+    },
+    "exports": [
+        {
+            "zip": false,
+            "fileNamePrefix": "Plus",
+            "singleFloor": {
+                "resolution": {
+                    "width": 4000,
+                    "height": 3000
+                },
+                "backgroundColor": "#ffffff",
+                "backgroundOpacity": 1,
+                "format": "png",
+                "dpi": 144,
+                "layout": {
+                    "height": 0.82,
+                    "width": 0.94,
+                    "top": 0.03,
+                    "left": 0.03
+                },
+                "overlay": {
+                    "overlayLabels": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "en": [
+                                    "MEASUREMENTS ARE CALCULATED BY CUBICASA TECHNOLOGY. DEEMED HIGHLY RELIABLE BUT NOT GUARANTEED."
+                                ]
+                            },
+                            "color": "#AAAAAA",
+                            "layout": {
+                                "height": 0.017,
+                                "bottom": 0.03
+                            }
+                        },
+                        {
+                            "type": "image",
+                            "url": "https://customerlogo.s3.amazonaws.com/83323b6e-3e2d-4735-b7c8-98099f53169b",
+                            "layout": {
+                                "height": 0.0766,
+                                "width": 0.1875,
+                                "bottom": 0.03,
+                                "left": 0.0225
+                            }
+                        },
+                        {
+                            "type": "compass",
+                            "url": "https://s3.us-east-2.amazonaws.com/cubi.casa.exporter.logos/compass/compass-caret-N.svg",
+                            "layout": {
+                                "height": 0.04,
+                                "width": 0.04,
+                                "bottom": 0.03,
+                                "right": 0.0225
+                            }
+                        },
+                        {
+                            "type": "totalArea",
+                            "lineHeight": 0.0035,
+                            "layout": {
+                                "bottom": 0.05
+                            }
+                        }
+                    ]
+                }
+            },
+            "compose": {
+                "resolution": {
+                    "width": 4000,
+                    "height": 3000
+                },
+                "backgroundColor": "#ffffff",
+                "backgroundOpacity": 1,
+                "format": "png",
+                "dpi": 144,
+                "layout": {
+                    "height": 0.82,
+                    "width": 0.94,
+                    "top": 0.03,
+                    "left": 0.03
+                },
+                "overlay": {
+                    "overlayLabels": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "en": [
+                                    "MEASUREMENTS ARE CALCULATED BY CUBICASA TECHNOLOGY. DEEMED HIGHLY RELIABLE BUT NOT GUARANTEED."
+                                ]
+                            },
+                            "color": "#AAAAAA",
+                            "layout": {
+                                "height": 0.017,
+                                "bottom": 0.03
+                            }
+                        },
+                        {
+                            "type": "image",
+                            "url": "https://customerlogo.s3.amazonaws.com/83323b6e-3e2d-4735-b7c8-98099f53169b",
+                            "layout": {
+                                "height": 0.0766,
+                                "width": 0.1875,
+                                "bottom": 0.03,
+                                "left": 0.0225
+                            }
+                        },
+                        {
+                            "type": "compass",
+                            "url": "https://s3.us-east-2.amazonaws.com/cubi.casa.exporter.logos/compass/compass-caret-N.svg",
+                            "layout": {
+                                "height": 0.04,
+                                "width": 0.04,
+                                "bottom": 0.03,
+                                "right": 0.0225
+                            }
+                        },
+                        {
+                            "type": "totalArea",
+                            "lineHeight": 0.0035,
+                            "layout": {
+                                "bottom": 0.05
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

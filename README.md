@@ -190,33 +190,11 @@ The design system uses CSS variables for theming. Modify `src/style.css` to cust
 ### ResultViewer
 
 - Success/error alerts
+- Loading notification during API calls
+- Preview all of generated images in png/jpeg
 - Download link for generated files
 - Collapsible raw JSON response
 - Professional error messages
-
-## 📝 Example Configuration
-
-```json
-{
-  "globalModelOptions": {
-    "unit": "m",
-    "showSpaceLabels": true,
-    "showScaleIndicator": true,
-    "outerMeasurements": true
-  },
-  "dimensions": {
-    "text": true,
-    "markers": true,
-    "metersDecimals": 2
-  },
-  "exports": [
-    {
-      "format": "png",
-      "dpi": 150
-    }
-  ]
-}
-```
 
 ## 🚧 Future Enhancements
 
@@ -224,8 +202,8 @@ The design system uses CSS variables for theming. Modify `src/style.css` to cust
 - [ ] Support for all API configuration options
 - [ ] Array/object configuration editing
 - [ ] Configuration templates
-- [ ] History/undo functionality
-- [ ] Dark mode toggle
+- [ ] Direct json tab editing
+- [ ] Dark/Light mode toggle
 - [ ] Multi-language support
 - [ ] Configuration validation against API schema
 - [ ] Batch export functionality
@@ -243,7 +221,7 @@ MIT
 
 ## 👤 Author
 
-[Your Name]
+TRUONG ANH KHOA
 
 ## 🙏 Acknowledgments
 

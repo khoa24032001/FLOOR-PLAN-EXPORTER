@@ -10,6 +10,7 @@ import ResultViewer from './components/ResultViewer.vue'
 const config = ref(null)
 const result = ref(null)
 const error = ref(null)
+const isExporting = ref(false)  // Loading state
 
 const handleFileLoaded = (json) => {
   config.value = json
@@ -17,14 +18,22 @@ const handleFileLoaded = (json) => {
   error.value = null
 }
 
+const handleExportStart = () => {
+  isExporting.value = true
+  result.value = null
+  error.value = null
+}
+
 const handleExportResult = (res) => {
   result.value = res
   error.value = null
+  isExporting.value = false
 }
 
 const handleError = (err) => {
   error.value = err
   result.value = null
+  isExporting.value = false
 }
 </script>
 
@@ -71,6 +80,7 @@ const handleError = (err) => {
           <DownloadButton :config="config" />
           <ExportButton 
             :config="config" 
+            @start="handleExportStart"
             @success="handleExportResult"
             @error="handleError"
           />
@@ -84,7 +94,11 @@ const handleError = (err) => {
         leave-active-class="transition-all duration-300"
         leave-to-class="opacity-0 transform translate-y-4"
       >
-        <ResultViewer :result="result" :error="error" />
+        <ResultViewer 
+          :result="result" 
+          :error="error"
+          :loading="isExporting"
+        />
       </Transition>
     </main>
 

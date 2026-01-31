@@ -8,14 +8,22 @@ const props = defineProps({
   config: Object 
 })
 
-const emit = defineEmits(['success', 'error'])
+const emit = defineEmits(['start', 'success', 'error'])
 const isLoading = ref(false)
 
 const handleExport = async () => {
   try {
     isLoading.value = true
-    const API_KEY = '6731c959-9947-4f20-a458-dda6bb96dd46'
-    const MODEL_ID = '2710a01d-4e2e-4d97-9f1b-a5918fc35736'
+    emit('start')  // Emit start event for loading state
+    
+    // Get credentials from environment variables
+    const API_KEY = import.meta.env.VITE_API_KEY
+    const MODEL_ID = import.meta.env.VITE_MODEL_ID
+
+    // Validate credentials exist
+    if (!API_KEY || !MODEL_ID) {
+      throw new Error('API credentials not configured. Please check your .env file.')
+    }
 
     const res = await exportFloorPlan(MODEL_ID, API_KEY, props.config)
     emit('success', res)
