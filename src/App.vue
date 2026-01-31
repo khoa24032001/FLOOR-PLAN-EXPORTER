@@ -10,12 +10,20 @@ import ResultViewer from './components/ResultViewer.vue'
 const config = ref(null)
 const result = ref(null)
 const error = ref(null)
-const isExporting = ref(false)  // Loading state
+const isExporting = ref(false)
 
 const handleFileLoaded = (json) => {
   config.value = json
   result.value = null
   error.value = null
+}
+
+const handleFileError = () => {
+  // Reset everything to initial state when file upload fails
+  config.value = null
+  result.value = null
+  error.value = null
+  isExporting.value = false
 }
 
 const handleExportStart = () => {
@@ -57,7 +65,10 @@ const handleError = (err) => {
     <!-- Main Content -->
     <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
       <!-- Step 1: Upload -->
-      <FileUploader @loaded="handleFileLoaded" />
+      <FileUploader 
+        @loaded="handleFileLoaded"
+        @error="handleFileError"
+      />
 
       <!-- Step 2: Edit Configuration -->
       <Transition
@@ -95,6 +106,7 @@ const handleError = (err) => {
         leave-to-class="opacity-0 transform translate-y-4"
       >
         <ResultViewer 
+          v-if="config"
           :result="result" 
           :error="error"
           :loading="isExporting"
